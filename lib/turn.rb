@@ -42,4 +42,7 @@ def turn(board)
   valid_move?(board,index)
   if valid_move? == true
     move(board,index,character="X")
+    else 
+     turn(board)
+  end  
 end
