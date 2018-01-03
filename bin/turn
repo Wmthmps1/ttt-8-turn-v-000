@@ -3,11 +3,13 @@ require_relative '../lib/turn'
 
 # Code your CLI Here
 board=[" "," "," "," "," "," "," "," "," "]
+
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
 puts "Where would you like to go?"
 user_input=gets.strip
 index=input_to_index(user_input)
+
 if valid_move(board,index) == true
   move(board,index,character="X")
 else 
