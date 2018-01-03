@@ -28,7 +28,7 @@ end
 
 # code your input_to_index and move method here!
 def input_to_index(user_input)
-  user_input.to_i-1
+  index=user_input.to_i-1
 end
 
 def move(board,index,character="X")
@@ -38,5 +38,5 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input_to_index(user_input)
-  
+
 end
