@@ -9,7 +9,6 @@ end
 
 
 def valid_move?(board,index)
-  board[index].to_i-1
   if position_taken?(board,index) == true
     return false
   elsif index > 9 || index < 0
@@ -38,4 +37,6 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
+  input_to_index(user_input)
+  
 end
